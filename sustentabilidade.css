@@ -1,0 +1,308 @@
+/* Configurações Gerais de Design */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    line-height: 1.7;
+    margin: 0;
+    padding: 0;
+    background-color: #f1f5f9; /* Fundo suave cinza-azulado */
+    color: #334155;
+}
+
+/* Cabeçalho com Degradê Moderno */
+header {
+    background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
+    color: #f8fafc;
+    padding: 60px 20px;
+    text-align: center;
+    border-bottom: 5px solid #3b82f6; /* Detalhe em linha azul viva */
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.4rem;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+}
+
+header p {
+    margin-top: 12px;
+    font-size: 1.2rem;
+    color: #94a3b8;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Caixa Principal de Conteúdo */
+main {
+    max-width: 950px;
+    margin: 40px auto;
+    padding: 40px;
+    background: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.05), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+/* Títulos das Seções com Detalhes Visuais */
+h2 {
+    color: #0f172a;
+    font-size: 1.7rem;
+    border-bottom: 3px solid #3b82f6; /* Detalhe azul na base do título */
+    padding-bottom: 8px;
+    margin-top: 45px;
+}
+
+/* Mídias Integradas (Imagem e Vídeo) */
+.container-midia {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    margin: 35px 0;
+    background: #f8fafc;
+    padding: 25px;
+    border-radius: 12px;
+    border: 1px solid #e2e8f0;
+}
+
+.item-midia {
+    flex: 1;
+    text-align: center;
+}
+
+.imagem-alerta {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    border: 1px solid #cbd5e1;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsividade do Vídeo */
+.video-responsivo {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 25px;
+    height: 0;
+    overflow: hidden;
+    border-radius: 8px;
+    border: 1px solid #cbd5e1;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+.video-responsivo iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.legenda-midia {
+    font-size: 0.85rem;
+    color: #64748b;
+    margin-top: 12px;
+    font-style: italic;
+    font-weight: 500;
+}
+
+/* Caixa de Alerta (Cores de Perigo Suaves) */
+.alerta-detalhado {
+    background-color: #fff1f2; /* Vermelho/Rosa suave */
+    border-left: 6px solid #f43f5e; /* Linha de destaque vibrante */
+    padding: 30px;
+    margin: 35px 0;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px -1px rgba(244, 63, 94, 0.05);
+}
+
+.alerta-detalhado h3 {
+    margin-top: 0;
+    color: #be123c;
+    font-size: 1.4rem;
+}
+
+.alerta-detalhado ul {
+    padding-left: 20px;
+}
+
+.alerta-detalhado li {
+    margin-bottom: 14px;
+}
+
+/* Bloco de Citação da Legislação */
+blockquote {
+    background: #f8fafc;
+    border-left: 6px solid #64748b;
+    margin: 25px 0;
+    padding: 20px;
+    font-style: italic;
+    color: #475569;
+    border-radius: 0 8px 8px 0;
+}
+
+/* Grid de Cards Interativos (Cores de Solução Segura) */
+.solucoes-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    margin: 30px 0;
+}
+
+.card-solucao {
+    background: #f0fdf4; /* Verde suave refrescante */
+    border: 1px solid #bbf7d0;
+    padding: 25px;
+    border-radius: 12px;
+    cursor: pointer;
+    position: relative;
+    transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.card-solucao:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 15px -3px rgba(22, 163, 74, 0.1), 0 4px 6px -2px rgba(22, 163, 74, 0.05);
+    background: #dcfce7;
+    border-color: #86efac;
+}
+
+.card-solucao h3 {
+    margin: 0 0 10px 0;
+    color: #15803d;
+    font-size: 1.2rem;
+}
+
+.card-solucao p {
+    margin: 0 0 15px 0;
+    font-size: 0.95rem;
+    color: #166534;
+}
+
+.detalhe-card {
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: #16a34a;
+}
+
+/* FAQ Estilo Sanfona */
+.faq-secao {
+    margin-top: 45px;
+}
+
+.faq-item {
+    border: 1px solid #e2e8f0;
+    margin-bottom: 12px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.02);
+}
+
+.faq-pergunta {
+    width: 100%;
+    background: #f8fafc;
+    border: none;
+    outline: none;
+    text-align: left;
+    padding: 18px 25px;
+    font-size: 1.05rem;
+    font-weight: 600;
+    color: #1e293b;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background 0.2s;
+}
+
+.faq-pergunta:hover {
+    background: #f1f5f9;
+}
+
+.icone-faq {
+    color: #3b82f6;
+    font-size: 1.3rem;
+    transition: transform 0.2s;
+}
+
+/* Modificação visual via classe JS para o FAQ aberto */
+.faq-pergunta.ativa .icone-faq {
+    transform: rotate(45deg);
+    color: #ef4444;
+}
+
+.faq-resposta {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+    background: #ffffff;
+}
+
+.faq-resposta p {
+    padding: 20px 25px;
+    margin: 0;
+    border-top: 1px solid #f1f5f9;
+}
+
+/* Janela Modal de Informações */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 2000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(15, 23, 42, 0.6);
+    backdrop-filter: blur(4px); /* Detalhe moderno de desfoque de fundo */
+}
+
+.modal-conteudo {
+    background-color: #ffffff;
+    margin: 12% auto;
+    padding: 35px;
+    border-radius: 16px;
+    width: 90%;
+    max-width: 550px;
+    position: relative;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+    border-top: 6px solid #16a34a; /* Detalhe verde no topo da janela modal */
+}
+
+.fechar {
+    position: absolute;
+    right: 20px;
+    top: 15px;
+    color: #94a3b8;
+    font-size: 32px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: color 0.2s;
+}
+
+.fechar:hover {
+    color: #334155;
+}
+
+/* Rodapé */
+footer {
+    text-align: center;
+    padding: 40px;
+    margin-top: 60px;
+    background-color: #0f172a;
+    color: #94a3b8;
+    font-size: 0.95rem;
+    border-top: 4px solid #3b82f6;
+}
+
+/* Ajustes de Responsividade */
+@media (min-width: 768px) {
+    .container-midia {
+        flex-direction: row;
+    }
+    .solucoes-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
